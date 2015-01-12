@@ -26,8 +26,8 @@
 		<ver.commons-net>2.2</ver.commons-net>
 		<ver.commons-codec>1.5</ver.commons-codec>
 		<ver.commons-dbcp>1.4</ver.commons-dbcp>
-		<ver.commons-fileupload>1.2.2</ver.commons-fileupload>
-		<ver.commons-io>2.1</ver.commons-io>
+		<ver.commons-fileupload>1.3</ver.commons-fileupload>
+		<ver.commons-io>2.4</ver.commons-io>
 		<commons-lang3>3.0</commons-lang3>
 		<ver.commons-httpcomponent>4.2.1</ver.commons-httpcomponent>
 		<ver.log4j>1.2.16</ver.log4j>

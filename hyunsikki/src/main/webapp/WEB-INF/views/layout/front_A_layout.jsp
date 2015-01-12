@@ -11,8 +11,9 @@
 	<meta name="title" content="<s:message code="common.title" />" />
 	<meta name="description" content="Site" />
 	<meta name="keywords" content="Search keywords">
-<!-- 	<link rel="stylesheet" type="text/css" href="/web/css/common.css" /> -->
-	<script type="text/javascript" src="/web/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+	<script type="text/javascript" src="/common/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/jquery-ui-1.11.2.custom/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
 </head>
 <body>
 <div id="wrap">
