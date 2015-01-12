@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* progress bar */
+#pop_loading {display:none; background:#F0F0F0; z-index:1000; padding:20px 30px;}
+#pop_loading p{margin-bottom:10px 0; }
+p.progress {
+	position: relative;
+	display: block;
+	height: 15px;
+	border: 1px solid silver;
+	width: 300px;
+	background-image: url(../img/graph-bars-small.png);
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	-moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+	margin-bottom: 0;
+}
+
+p.progress a {
+	text-align: center;
+	display: block;
+	height: 15px;
+	width: 0%;
+	line-height: 15px;
+	background: #c1ff75 url(../img/graph-bars-small.png) 0 -15px;
+	font-size: 10px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+	color: black;
+}
+
+p.progress a:after {
+	content: " ";
+	height: 15px;
+	width: 300;
+	float: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+p.progress a:hover {
+	background-color: #666 !important;
+	color: #FFF !important;
+}
