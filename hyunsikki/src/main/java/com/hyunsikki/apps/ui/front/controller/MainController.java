@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.hyunsikki.apps.ui.front.common.controller.BaseController;
+import com.hyunsikki.apps.common.controller.BaseController;
 import com.hyunsikki.apps.ui.front.model.User;
 import com.hyunsikki.apps.ui.front.service.UserService;
 

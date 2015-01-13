@@ -14,4 +14,6 @@ import com.hyunsikki.apps.ui.front.model.User;
 public interface UserMapper {
 
 	List<User> getUserList();
+	
+	User getUser(String userId);
 }

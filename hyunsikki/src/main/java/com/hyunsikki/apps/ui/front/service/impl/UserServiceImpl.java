@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.hyunsikki.apps.ui.front.common.service.impl.BaseServiceImpl;
+import com.hyunsikki.apps.common.service.impl.BaseServiceImpl;
 import com.hyunsikki.apps.ui.front.mapper.UserMapper;
 import com.hyunsikki.apps.ui.front.model.User;
 import com.hyunsikki.apps.ui.front.service.UserService;

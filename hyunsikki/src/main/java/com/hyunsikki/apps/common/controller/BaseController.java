@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.hyunsikki.apps.ui.front.common.controller;
+package com.hyunsikki.apps.common.controller;
 
 import java.util.Locale;
 

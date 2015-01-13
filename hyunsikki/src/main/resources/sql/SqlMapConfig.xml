@@ -2,8 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-<!-- <typeAliases> -->
-<!-- 	<typeAlias type="com.skt.nfv.portal.vnfc.model.internal.CONNECTION_POINTS" alias="CONNECTION_POINTS"/> -->
-<!-- </typeAliases> -->
+<typeAliases>
+	<typeAlias type="com.hyunsikki.apps.ui.front.model.User" alias="User"/>
+</typeAliases>
 
 </configuration>

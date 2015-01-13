@@ -4,7 +4,12 @@
 
 <mapper namespace="com.hyunsikki.apps.ui.front.mapper.UserMapper">
 	
-	<select id="getUserList" resultType="com.hyunsikki.apps.ui.front.model.User">
+	<select id="getUser" parameterType="String" resultType="User">
+		SELECT * FROM t_user
+		WHERE userId = #{userId}
+	</select>
+
+	<select id="getUserList" resultType="User">
 		SELECT * FROM t_user
 	</select>
 	

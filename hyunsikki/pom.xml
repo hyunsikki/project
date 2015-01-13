@@ -9,14 +9,13 @@
 	<description>private</description>
 	<properties>
 		<java-version>1.7</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
 		<org.slf4j-version>1.7.0</org.slf4j-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<ver.servlet>2.5</ver.servlet>
 		<ver.jstl>1.2</ver.jstl>
 		<ver.taglib>1.1.2</ver.taglib>
-		<ver.spring>3.1.1.RELEASE</ver.spring>
+		<ver.spring>3.1.4.RELEASE</ver.spring>
 		<ver.junit>4.10</ver.junit>
 		<ver.mockito>1.9.0</ver.mockito>
 		<ver.aspectj>1.6.11</ver.aspectj>
@@ -41,7 +40,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<!-- Spring security -->
-		<spring.security.core-version>3.0.5.RELEASE</spring.security.core-version>
+		<ver.security>3.0.5.RELEASE</ver.security>
 		<!-- Tiles -->
 		<org.apache.tiles-version>2.2.2</org.apache.tiles-version>
 	</properties>
@@ -357,28 +356,28 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
-			<version>${spring.security.core-version}</version>
+			<version>${ver.security}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>${spring.security.core-version}</version>
+			<version>${ver.security}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-			<version>${spring.security.core-version}</version>
+			<version>${ver.security}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
-			<version>${spring.security.core-version}</version>
+			<version>${ver.security}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>

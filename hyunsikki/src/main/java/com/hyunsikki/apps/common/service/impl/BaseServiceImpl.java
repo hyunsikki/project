@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.hyunsikki.apps.ui.front.common.service.impl;
+package com.hyunsikki.apps.common.service.impl;
 
 import java.util.UUID;
 

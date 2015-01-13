@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans        
+	http://www.springframework.org/schema/beans/spring-beans.xsd    
+	http://www.springframework.org/schema/security     
+	http://www.springframework.org/schema/security/spring-security.xsd">     
+  
+	<!-- This is where we configure Spring-Security -->
+	<http auto-config="true" use-expressions="true" disable-url-rewriting="true">
+		<intercept-url pattern="/favicon.ico" access="permitAll" />
+		<intercept-url pattern="/resources/**" filters="none" />
+		<intercept-url pattern="/common/**" filters="none" />
+		<intercept-url pattern="/error/**" filters="none" />
+		<intercept-url pattern="/"	access="permitAll" />
+		<intercept-url pattern="/auth/**" access="permitAll" />	
+		<intercept-url pattern="/Supervisor/**"	access="hasRole('ROLE_ADMIN')" />
+		<form-login login-page="/auth/login" 
+							login-processing-url="/auth/process/" 
+							authentication-failure-url="/auth/login?error=true" 
+							default-target-url="/Supervisor/" />
+		<logout logout-url="/auth/logout" logout-success-url="/auth/login" />
+	</http>
+	
+	<!-- Declare an authentication-manager to use a custom userDetailsService -->
+	<authentication-manager>
+		<authentication-provider
+			user-service-ref="customUserDetailsService">
+			<password-encoder ref="passwordEncoder" />
+		</authentication-provider>
+	</authentication-manager>     
+	
+	<!-- Use a Md5 encoder since the user's passwords are stored as Md5 in the database -->
+	<beans:bean class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" id="passwordEncoder" />    
+	<!-- A custom service where Spring will retrieve users and their corresponding access levels -->
+	<beans:bean id="customUserDetailsService" class="com.hyunsikki.apps.security.UserDetailsServiceImpl" />
+	
+<!-- 	<bean id="loginSuccessHandler" class="com.sec.dmc.security.LoginSuccessHandler" /> -->
+</beans:beans>

@@ -10,6 +10,12 @@
 		<put-attribute name="footer"    value="/WEB-INF/views/layout/front_A_footer.jsp" />
 	</definition>
 
+	<definition name="backA" template="/WEB-INF/views/layout/back_A_layout.jsp">
+		<put-attribute name="header"    value="/WEB-INF/views/layout/back_A_header.jsp" />
+		<put-attribute name="content"   value="" />
+		<put-attribute name="footer"    value="/WEB-INF/views/layout/back_A_footer.jsp" />
+	</definition>
+
 	<definition name="html" template="/WEB-INF/views/layout/no-layout.jsp">
 		<put-attribute name="content"   value="" />
 	</definition>
@@ -28,6 +34,18 @@
 	
 	<definition name="*/*/*.frontA" extends="frontA">
 		<put-attribute name="content"   value="/WEB-INF/views/front/{1}/{2}/{3}.jsp" />
+	</definition>
+
+	<definition name="*.backA" extends="backA">
+		<put-attribute name="content"   value="/WEB-INF/views/back/{1}.jsp" />
+	</definition>
+	
+	<definition name="*/*.backA" extends="backA">
+		<put-attribute name="content"   value="/WEB-INF/views/back/{1}/{2}.jsp" />
+	</definition>
+	
+	<definition name="*/*/*.backA" extends="backA">
+		<put-attribute name="content"   value="/WEB-INF/views/back/{1}/{2}/{3}.jsp" />
 	</definition>
 
 	<definition name="*.login" extends="login">
